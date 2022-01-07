@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:ukhaan_tukka/screens/constant.dart';
 import 'package:ukhaan_tukka/screens/drawer.dart';
-import 'package:ukhaan_tukka/screens/homepage.dart';
+// import 'package:ukhaan_tukka/screens/homepage.dart';
 
 class ListHomePage extends StatefulWidget {
   const ListHomePage({Key? key}) : super(key: key);
@@ -42,13 +42,7 @@ class _ListHomePageState extends State<ListHomePage> {
                         return SizedBox(
                           width: 100,
                           child: GestureDetector(
-                            onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => const HomePage()),
-                              );
-                            },
+                            onTap: () {},
                             child: Column(
                               children: [
                                 const SizedBox(height: 10),

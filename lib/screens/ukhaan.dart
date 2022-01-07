@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:ukhaan_tukka/screens/ukhanData.dart';
+
 
 class UkhanTukka extends StatefulWidget {
-  const UkhanTukka({Key? key}) : super(key: key);
+  final String title;
+  final List<String> datas;
+
+  const UkhanTukka({ required this.title, required this.datas});
 
   @override
   _UkhanTukkaState createState() => _UkhanTukkaState();
@@ -27,16 +30,16 @@ class _UkhanTukkaState extends State<UkhanTukka> {
                 const SizedBox(
                   height: 20,
                 ),
-                const Text(
-                  'क\n बाट सुरु हुने उखान र टुक्काहरु ',
+                Text(
+                  '${widget.title}\n बाट सुरु हुने उखान र टुक्काहरु ',
                   textAlign: TextAlign.center,
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 ),
                 const Divider(height: 2, thickness: 2),
                 const SizedBox(
                   height: 20,
                 ),
-                ...Ukhan.ukhans.map((ukhan) {
+                ...widget.datas.map((ukhan) {
                   return Column(
                     children: [
                       const SizedBox(

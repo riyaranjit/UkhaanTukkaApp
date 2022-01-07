@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ukhaan_tukka/screens/homepage.dart';
+// import 'package:ukhaan_tukka/screens/homepage.dart';
+import 'package:ukhaan_tukka/screens/homepage1.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,6 +15,6 @@ class MyApp extends StatelessWidget {
         debugShowCheckedModeBanner: false,
         theme: ThemeData(primarySwatch: Colors.blue),
         title: "Ukhaan Tukka",
-        home: const HomePage());
+        home:  HomePage1());
   }
 }
